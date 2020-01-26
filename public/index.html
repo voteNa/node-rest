@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+    название директории, вначале "/"
+    <input type="string" v-model.string="dirName">
+    <button v-on:click="viewDir">view List</button>
+    <button v-on:click="createDir">create Dir</button>
+    <button v-on:click="deleteDir">delete Dir</button>
+    <div>{{result}}</div>
+</div>
+<script src="/front/client.js"></script>
+
+</body>
+</html>
